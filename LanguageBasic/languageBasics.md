@@ -1,8 +1,39 @@
 # Index
+
 - [Operator Precedence](#operator-precedence)
 - [Function declearation vs function expression](#function-declearation-vs-function-expression)
 - [Arrays](#arrays)
-    - [Array methods](#array-methods)
+
+  - <details><summary>Array Methods</summary>
+        <p>
+
+        Available [Array methods](#array-methods)
+
+        1. concat()
+        2. copyWithin()
+        3. every()
+        4. fillter()
+        5. flat()
+        6. flatMap()
+        7. forEach()
+        8. indexOf()
+        9. lastIndexOf()
+        10. map()
+        11. reduce()
+        12. reverse()
+        13. slice()
+        14. some()
+        15. sort()
+        16. splice()
+        17. entries()
+        18. fill()
+        19. find()
+        20. findIndex()
+
+        </p>
+
+    </details>
+
 ### Operator precedence
 
 | Operator     | precedence | associativity | operator type  |
