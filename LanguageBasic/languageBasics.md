@@ -7,7 +7,8 @@
   - <details><summary>Array Methods</summary>
         <p>
 
-        Available [Array methods](#array-methods)
+    Available [Array methods](#array-methods)
+
 
         1. concat()
         2. copyWithin()
@@ -29,6 +30,14 @@
         18. fill()
         19. find()
         20. findIndex()
+        21. findLast()
+        22. findLastIndex()
+        23. group()
+        24. groupTo()
+        25. reduceRight()
+        26. Array.from()
+        27. Array.isArray()
+        28. Array.of()
 
         </p>
 
@@ -399,3 +408,114 @@ Code example of findIndex():
 
     console.log(array1.findIndex(isLargeNumber));
     // expected output: 3
+21. `findLast()` returns the value of the last element in the provided array that satisfies the provided testing function. Otherwise undefined is returned.
+
+<!-- code example of findLast -->
+
+Code example of findLast:
+
+    const array1 = [5, 12, 8, 130, 44];
+
+    const isLargeNumber = (element) => element > 13;
+
+    console.log(array1.findLast(isLargeNumber));
+    // expected output: 44
+22. `findLastIndex()` returns the index of the last element in the provided array that satisfies the provided testing function. Otherwise -1 is returned.
+
+<!-- code example of findLastIndex -->
+
+Code example of findLastIndex:
+
+    const array1 = [5, 12, 8, 130, 44];
+
+    const isLargeNumber = (element) => element > 13;
+
+    console.log(array1.findLastIndex(isLargeNumber));
+    // expected output: 4
+
+23. `group()` groups the elements of an array based on the given function.
+
+<!-- code example of group -->
+
+Code example of group:
+
+    const array = [6.1, 4.2, 6.3];
+    const groupped = array.groupBy(Math.floor);
+    // [[6.1, 6.3], [4.2]]
+
+    console.log(groupped);
+    // expected output: Array [Array [6.1, 6.3], Array [4.2]]
+24. `groupToMap()` groups the elements of an array based on the given function and returns the objects in a Map.
+
+<!-- code example of groupToMap -->
+
+Code example of groupToMap:
+
+    const array = [6.1, 4.2, 6.3];
+    const groupped = array.groupToMap(Math.floor);
+    // {6: [6.1, 6.3], 4: [4.2]}
+
+    console.log(groupped);
+    // expected output: Map {6 => Array [6.1, 6.3], 4 => Array [4.2]}
+
+25. `reduceRight()` applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
+
+<!-- code example of reduceRight -->
+
+Code example of reduceRight:
+
+    const array1 = [[0, 1], [2, 3], [4, 5]].reduceRight(
+      (accumulator, currentValue) => accumulator.concat(currentValue)
+    );
+
+    console.log(array1);
+    // expected output: Array [4, 5, 2, 3, 0, 1]
+
+26. `Array.from()` creates a new, shallow-copied Array instance from an array-like or iterable object.
+
+<!-- code example of Array.from -->
+
+Code example of Array.from:
+
+    function f() {
+      return Array.from(arguments);
+    }
+
+    f(1, 2, 3);
+    // [1, 2, 3]
+
+    console.log(Array.from('foo'));
+    // expected output: Array ["f", "o", "o"]
+
+27. `Array.isArray()` determines whether the passed value is an Array.
+
+<!-- code example of Array.isArray -->
+
+Code example of Array.isArray:
+
+    Array.isArray([1, 2, 3]);
+    // true
+
+    Array.isArray({foo: 123});
+    // false
+
+    Array.isArray('foobar');
+    // false
+
+    Array.isArray(undefined);
+    // false
+
+28. `Array.of()` creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments.
+
+<!-- code example of Array.of -->
+
+Code example of Array.of:
+
+    Array.of(7);
+    // [7]
+
+    Array.of(1, 2, 3);
+    // [1, 2, 3]
+
+    Array.of(undefined);
+    // [undefined]
