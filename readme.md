@@ -11,3 +11,7 @@ In this section, I listed some topics which include:
 1. [Operator precedence](./LanguageBasic/languageBasics.md#operator-precedence)
 2. [Function declearation vs function expression](./LanguageBasic/languageBasics.md#function-declearation-vs-function-expression)
 3. [Arrays](./LanguageBasic/languageBasics.md#arrays)
+
+## How JS works behind the scenes
+
+[Click here](./HowJSWorks/howJSWorks.md) to view the how JS works file.
