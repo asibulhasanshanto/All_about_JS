@@ -5,16 +5,16 @@ Execution context is a container which stores variables and in which a piece of 
 
  
 <!-- show the executionC1 image in this folder -->
-![Execution Context 1](./executionC1.png)
+![Execution Context 1](/HowJSWorks/executionC1.png)
 
-![Execution Context 2](./executionC2.png)
+![Execution Context 2](/HowJSWorks/executionC2.png)
 
 ### Hoisting
 variables and functions can be used before they are decleared.This is because of the creation phase of the execution context. In the creation phase, a variable object is created, which contains the function and variable declearations. The code is scanned for function declearations and for each function, a property is created in the variable object, pointing to the function. The same thing happens for variable declearations, but instead of pointing to the function, it points to undefined. This is called hoisting.
 
 ***Only function declerations has hoisting. function expressions are not hoisted.***
 
-![Hoisting](./hoisting.png)
+![Hoisting](/HowJSWorks/hoisting.png)
 
 ```javascript
     // variable hoisting
@@ -49,7 +49,7 @@ Scope of a variable is the region of your code where you have access to that var
 2. Function Scope
 3. Block Scope
 
-![Scope](./scope.png)
+![Scope](/HowJSWorks/scope.png)
 
 ### Scope Chain
 Scope chain is a chain of parent scopes. When a variable is not found in the current scope, the scope chain is used to look for the variable in the parent scope. This process continues until the variable is found or the global scope is reached.
@@ -112,4 +112,4 @@ if (true) {
 ### This Keyword
 This keyword is a special keyword which is created for every execution context. It is not assigned a value until a function where it is defined is called. It is only assigned a value when the function is actually called.
 
-![This Keyword](./this.png)
+![This Keyword](/HowJSWorks/this.png)
