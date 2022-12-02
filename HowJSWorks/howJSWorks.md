@@ -12,7 +12,10 @@ Execution context is a container which stores variables and in which a piece of 
 ### Hoisting
 variables and functions can be used before they are decleared.This is because of the creation phase of the execution context. In the creation phase, a variable object is created, which contains the function and variable declearations. The code is scanned for function declearations and for each function, a property is created in the variable object, pointing to the function. The same thing happens for variable declearations, but instead of pointing to the function, it points to undefined. This is called hoisting.
 
-*** Only function declerations has hoisting. function expressions are not hoisted. ***
+***Only function declerations has hoisting. function expressions are not hoisted.***
+
+![Hoisting](./hoisting.png)
+
 ```javascript
     // variable hoisting
     console.log(variable1)// undefined
@@ -78,3 +81,35 @@ if (true) {
 }
 // console.log(blockVariable);//error
 ```
+
+***Functions are block scopped if it is in strict mode.only let and const are block scopped.Var is function scopped but not block scopped.***
+
+```javascript
+    // global scope
+    var globalVariable = 1;
+    function globalFunc() {
+        console.log(this);
+    }
+    globalFunc();// window
+
+    // function scope
+    function func() {
+        var localVariable = 2;
+        function localFunc() {
+            console.log(this);
+        }
+        localFunc();// window
+    }
+    func();
+
+    // block scope
+    if (true) {
+        let blockVariable = 3;
+        console.log(this);// window
+    }
+```
+
+### This Keyword
+This keyword is a special keyword which is created for every execution context. It is not assigned a value until a function where it is defined is called. It is only assigned a value when the function is actually called.
+
+![This Keyword](./this.png)
