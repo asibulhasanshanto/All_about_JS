@@ -54,7 +54,7 @@ Scope of a variable is the region of your code where you have access to that var
 ### Scope Chain
 Scope chain is a chain of parent scopes. When a variable is not found in the current scope, the scope chain is used to look for the variable in the parent scope. This process continues until the variable is found or the global scope is reached.
 
-![Scope Chain](/HowJSWOrks/scopeChain.png)
+![Scope Chain](/HowJSWOrks/scopeChain.PNG)
 
 ```javascript 
 // global scope
