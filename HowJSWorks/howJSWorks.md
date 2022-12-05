@@ -147,3 +147,7 @@ const demoObject = {
 }
 demoObject.printName()
 ```
+
+### Primitive VS Reference Types
+
+![Primitive VS Reference Types](/HowJSWorks/primptive_vs_reference.PNG)
