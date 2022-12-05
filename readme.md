@@ -15,3 +15,12 @@ In this section, I listed some topics which include:
 ## How JS works behind the scenes
 
 [Click here](./HowJSWorks/howJSWorks.md) to view the how JS works file.
+
+In this section, I listed some topics which include:
+
+1. [Execution Context](./HowJSWorks/howJSWorks.md#execution-context)
+2. [Hoisting](./HowJSWorks/howJSWorks.md#hoisting)
+3. [Scope](./HowJSWorks/howJSWorks.md#scope)
+4. [Scope Chain](./HowJSWorks/howJSWorks.md#scope-chain)
+5. [this keyword](./HowJSWorks/howJSWorks.md#this-keyword)
+6. [Primitive vs Reference Types](./HowJSWorks/howJSWorks.md#primitive-vs-reference-types)

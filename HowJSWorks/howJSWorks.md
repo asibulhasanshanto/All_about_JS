@@ -1,4 +1,14 @@
-## JS behind the scene
+
+# JS behind the scene
+[Click here](./../readme.md) to go back to the home page
+## Index
+
+1. [Execution Context](#execution-context)
+2. [Hoisting](#hoisting)
+3. [Scope](#scope)
+4. [Scope Chain](#scope-chain)
+5. [this keyword](#this-keyword)
+6. [Primitive vs Reference Types](#primitive-vs-reference-types)
 
 ### Execution Context
 Execution context is a container which stores variables and in which a piece of our code is evaluated and executed. There are two types of execution context:
