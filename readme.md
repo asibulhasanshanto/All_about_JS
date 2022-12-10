@@ -24,3 +24,7 @@ In this section, I listed some topics which include:
 4. [Scope Chain](./HowJSWorks/howJSWorks.md#scope-chain)
 5. [this keyword](./HowJSWorks/howJSWorks.md#this-keyword)
 6. [Primitive vs Reference Types](./HowJSWorks/howJSWorks.md#primitive-vs-reference-types)
+
+## Asynchronous Javascript
+
+[Click here](./AsynchronousJavascript/async.md) to view the asynchronous JS file.
