@@ -169,5 +169,39 @@ I waited for 3 second
       get3Countries('portugal', 'canada', 'tanzania');
 
 ```
+
+### Other promise functions
+  
+  ```javascript
+  const timeout = function (sec) {
+    return new Promise(function (resolve, reject) {
+      setTimeout(function () {
+        resolve(`Resolved after ${sec} seconds`);
+      }, sec * 1000);
+    });
+  };
+
+  // 1.promise.race
+  const race = Promise.race([//it will return the first promise which is resolved. in this case it'll be the timeout(1)
+    timeout(2),
+    timeout(1),
+    timeout(3),
+  ]);
+
+  // 2.promise.allSettled
+  const allSettled = Promise.allSettled([//it will return the all the promises whether they are resolved or rejected
+    Promise.resolve("Success"),
+    Promise.reject("Error"),
+    Promise.resolve("Another success"),
+  ]);
+
+  // 3.promise.any
+  const any = Promise.any([//it will return the first promise which is resolved. in this case it'll be the timeout(1). But it'll ignore the rejected promises
+    Promise.resolve("Success"),
+    Promise.reject("Error"),
+    Promise.resolve("Another success"),
+  ]);
+
+
   
   
