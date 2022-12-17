@@ -31,6 +31,6 @@ In this section, I listed some topics which include:
 
 ## Data structures and Some Operators
 
-[Click here] to view the data structures and some operators file.
+[Click here](./DataStructures/dataStructures.md) to view the data structures and some operators file.
 
 Topics include:
