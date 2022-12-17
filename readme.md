@@ -28,3 +28,9 @@ In this section, I listed some topics which include:
 ## Asynchronous Javascript
 
 [Click here](./AsynchronousJavascript/async.md) to view the asynchronous JS file.
+
+## Data structures and Some Operators
+
+[Click here] to view the data structures and some operators file.
+
+Topics include:
