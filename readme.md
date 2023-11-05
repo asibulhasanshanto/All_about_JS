@@ -1,6 +1,12 @@
-# In depth Javascript Learning
+# Javascript go through doc
 
-This is a collection of resources to learn Javascript in depth. It is a work in progress and will be updated regularly. I'm following Jonas's Javascript course and will be adding resources as I go along.
+Almost all the topics of javascript in short description and examples. This would be enough to revise the basic javascript knowledge of a developer in a short amount of time. I followed the javascript mdn doc and a udemy course made by "jonas" which I believe one of the best one. Feel free to provide any positive or negative feedback. I will try to improve it as much as possible.
+
+You can find me here: 
+- [LinkedIn](https://www.linkedin.com/in/asibul-hasan-shanto)
+- [facebook](https://www.facebook.com/asibulhasan.shanto.3)
+
+![javascript](js.png)
 
 ## [Language Basics](./LanguageBasic/languageBasics.md)
 
