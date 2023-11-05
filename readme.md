@@ -4,13 +4,11 @@ This is a collection of resources to learn Javascript in depth. It is a work in 
 
 ## [Language Basics](./LanguageBasic/languageBasics.md)
 
-
 1. [Operator precedence](./LanguageBasic/languageBasics.md#operator-precedence)
 2. [Function declearation vs function expression](./LanguageBasic/languageBasics.md#function-declearation-vs-function-expression)
 3. [Arrays](./LanguageBasic/languageBasics.md#arrays)
 
 ## [How JS works behind the scenes](./HowJSWorks/howJSWorks.md)
-
 
 1. [Execution Context](./HowJSWorks/howJSWorks.md#execution-context)
 2. [Hoisting](./HowJSWorks/howJSWorks.md#hoisting)
@@ -18,6 +16,15 @@ This is a collection of resources to learn Javascript in depth. It is a work in 
 4. [Scope Chain](./HowJSWorks/howJSWorks.md#scope-chain)
 5. [this keyword](./HowJSWorks/howJSWorks.md#this-keyword)
 6. [Primitive vs Reference Types](./HowJSWorks/howJSWorks.md#primitive-vs-reference-types)
+
+## [Objects and Classes](./object_and_classes/objects_and_classes.md)
+
+1. [Objects](./object_and_classes/objects_and_classes.md#objects)
+2. [Prototypes and Prototype chains](./object_and_classes/objects_and_classes.md#prototypes-and-prototype-chains)
+3. [First class Functions](./object_and_classes/objects_and_classes.md#first-class-functions)
+4. [Immediately Invoked Function Expressions (IIFE)](./object_and_classes/objects_and_classes.md#immediately-invoked-function-expressions-iife)
+5. [Closures](./object_and_classes/objects_and_classes.md#closures)
+6. [Bind, Call and Apply](./object_and_classes/objects_and_classes.md#bind-call-and-apply)
 
 ## [Asynchronous Javascript](./AsynchronousJavascript/async.md)
 
