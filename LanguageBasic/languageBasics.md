@@ -1,6 +1,6 @@
 # Language Basics
 
-The basics of Javascript language are covered in this section. [Click here](./../readme.md) to go back to the main page.
+[Back](./../readme.md)
 
 ## Index
 
