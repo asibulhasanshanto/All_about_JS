@@ -1,6 +1,6 @@
 
 # JS behind the scene
-[Click here](./../readme.md) to go back to the home page
+[Back](./../readme.md)
 ## Index
 
 1. [Execution Context](#execution-context)
@@ -159,5 +159,7 @@ demoObject.printName()
 ```
 
 ### Primitive VS Reference Types
+
+Primitive types are stored in the execution context. Reference types are stored in the heap. Primitive types are copied by value. Reference types are copied by reference.
 
 ![Primitive VS Reference Types](/HowJSWorks/primptive_vs_reference.PNG)

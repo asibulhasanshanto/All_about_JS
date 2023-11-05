@@ -1,4 +1,5 @@
 # Language Basics
+
 The basics of Javascript language are covered in this section. [Click here](./../readme.md) to go back to the main page.
 
 ## Index
@@ -11,7 +12,6 @@ The basics of Javascript language are covered in this section. [Click here](./..
         <p>
 
     Available [Array methods](#array-methods)
-
 
         1. concat()
         2. copyWithin()
@@ -125,18 +125,17 @@ Function expression:
 #### Array methods
 
 1.  `concat()`
-    <!-- code example of concat -->
+    <!-- code example of concat--->
 
     Code example of concat:
 
 ```javascript
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
+const array1 = ["a", "b", "c"];
+const array2 = ["d", "e", "f"];
 const array3 = array1.concat(array2);
 
 console.log(array3);
 // expected output: Array ["a", "b", "c", "d", "e", "f"]
-
 ```
 
 2.  `copyWithin()`
@@ -145,7 +144,7 @@ console.log(array3);
     Code example of copyWithin:
 
 ```javascript
-const array1 = ['a', 'b', 'c', 'd', 'e'];
+const array1 = ["a", "b", "c", "d", "e"];
 
 // copy to index 0 the element at index 3
 console.log(array1.copyWithin(0, 3, 4));
@@ -167,7 +166,7 @@ const isBelowThreshold = (currentValue) => currentValue < 40;
 const array1 = [1, 30, 39, 29, 10, 13];
 
 console.log(array1.every(isBelowThreshold));
-// expected output: true
+// expected output: true (will be true if it satisfied the condition for all the elements)
 ```
 
 4.  `filter()`
@@ -176,9 +175,16 @@ console.log(array1.every(isBelowThreshold));
     Code example of filter:
 
 ```javascript
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const words = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present",
+];
 
-const result = words.filter(word => word.length > 6);
+const result = words.filter((word) => word.length > 6);
 
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
@@ -207,7 +213,7 @@ console.log(arr2.flat(2));
 ```javascript
 const arr1 = [1, 2, 3, 4];
 
-console.log(arr1.flatMap(x => [x, x * 2]));
+console.log(arr1.flatMap((x) => [x, x * 2]));
 // expected output: Array [1, 2, 2, 4, 3, 6, 4, 8]
 ```
 
@@ -217,9 +223,9 @@ console.log(arr1.flatMap(x => [x, x * 2]));
     Code example of forEach:
 
 ```javascript
-const array1 = ['a', 'b', 'c'];
+const array1 = ["a", "b", "c"];
 
-array1.forEach(element => console.log(element));
+array1.forEach((element) => console.log(element));
 
 // expected output: "a"
 // expected output: "b"
@@ -232,16 +238,16 @@ array1.forEach(element => console.log(element));
     Code example of indexOf:
 
 ```javascript
-const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+const beasts = ["ant", "bison", "camel", "duck", "bison"];
 
-console.log(beasts.indexOf('bison'));
+console.log(beasts.indexOf("bison"));
 // expected output: 1
 
 // start from index 2
-console.log(beasts.indexOf('bison', 2));
+console.log(beasts.indexOf("bison", 2));
 // expected output: 4
 
-console.log(beasts.indexOf('giraffe'));
+console.log(beasts.indexOf("giraffe"));
 // expected output: -1
 ```
 
@@ -251,12 +257,12 @@ console.log(beasts.indexOf('giraffe'));
     Code example of lastIndexOf:
 
 ```javascript
-const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+const animals = ["Dodo", "Tiger", "Penguin", "Dodo"];
 
-console.log(animals.lastIndexOf('Dodo'));
+console.log(animals.lastIndexOf("Dodo"));
 // expected output: 3
 
-console.log(animals.lastIndexOf('Tiger'));
+console.log(animals.lastIndexOf("Tiger"));
 // expected output: 1
 ```
 
@@ -266,10 +272,10 @@ console.log(animals.lastIndexOf('Tiger'));
     Code example of map:
 
 ```javascript
- const array1 = [1, 4, 9, 16];
+const array1 = [1, 4, 9, 16];
 
 // pass a function to map
-const map1 = array1.map(x => x * 2);
+const map1 = array1.map((x) => x * 2);
 
 console.log(map1);
 // expected output: Array [2, 8, 18, 32]
@@ -285,9 +291,10 @@ const array1 = [1, 2, 3, 4];
 
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
-const sumWithInitial = array1.reduce((accumulator,currentValue) =>
-    accumulator + currentValue,initialValue
- );
+const sumWithInitial = array1.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
 
 console.log(sumWithInitial);
 // expected output: 10
@@ -299,16 +306,16 @@ console.log(sumWithInitial);
     Code example of reverse:
 
 ```javascript
-const array1 = ['one', 'two', 'three'];
-console.log('array1:', array1);
+const array1 = ["one", "two", "three"];
+console.log("array1:", array1);
 // expected output: "array1:" Array ["one", "two", "three"]
 
 const reversed = array1.reverse();
-console.log('reversed:', reversed);
+console.log("reversed:", reversed);
 // expected output: "reversed:" Array ["three", "two", "one"]
 
 // Note that the array has been modified in place
-console.log('array1:', array1);
+console.log("array1:", array1);
 // expected output: "array1:" Array ["three", "two", "one"]
 ```
 
@@ -318,7 +325,7 @@ console.log('array1:', array1);
     Code example of slice:
 
 ```javascript
-const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+const animals = ["ant", "bison", "camel", "duck", "elephant"];
 
 console.log(animals.slice(2));
 // expected output: Array ["camel", "duck", "elephant"]
@@ -355,7 +362,7 @@ console.log(array.some(even));
 Code example of sort:
 
 ```javascript
-const months = ['March', 'Jan', 'Feb', 'Dec'];
+const months = ["March", "Jan", "Feb", "Dec"];
 months.sort();
 console.log(months);
 // expected output: Array ["Dec", "Feb", "Jan", "March"]
@@ -373,18 +380,18 @@ console.log(array1);
 Code example of splice:
 
 ```javascript
-const months = ['Jan', 'March', 'April', 'June'];
-months.splice(1, 0, 'Feb');
+const months = ["Jan", "March", "April", "June"];
+months.splice(1, 0, "Feb");
 // inserts at index 1
 console.log(months);
 // expected output: Array ["Jan", "Feb", "March", "April", "June"]
 
-months.splice(4, 1, 'May');
+months.splice(4, 1, "May");
 // replaces 1 element at index 4
 console.log(months);
 // expected output: Array ["Jan", "Feb", "March", "April", "May"]
-
 ```
+
 17. `entries()` returns a new Array Iterator object that contains the key/value pairs for each index in the array.
 
 <!-- code example of entries -->
@@ -392,7 +399,7 @@ console.log(months);
 Code example of entries:
 
 ```javascript
-const array1 = ['a', 'b', 'c'];
+const array1 = ["a", "b", "c"];
 const iterator1 = array1.entries();
 
 console.log(iterator1.next().value);
@@ -427,7 +434,7 @@ console.log(array1.fill(6));
 <!-- code example of find -->
 
 Code example of find:
-    
+
 ```javascript
 const array1 = [5, 12, 8, 130, 44];
 
@@ -454,6 +461,7 @@ const isLargeNumber = (element) => element > 13;
 console.log(array1.findIndex(isLargeNumber));
 // expected output: 3
 ```
+
 21. `findLast()` returns the value of the last element in the provided array that satisfies the provided testing function. Otherwise undefined is returned.
 
 <!-- code example of findLast -->
@@ -468,6 +476,7 @@ const isLargeNumber = (element) => element > 13;
 console.log(array1.findLast(isLargeNumber));
 // expected output: 44
 ```
+
 22. `findLastIndex()` returns the index of the last element in the provided array that satisfies the provided testing function. Otherwise -1 is returned.
 
 <!-- code example of findLastIndex -->
@@ -481,8 +490,8 @@ const isLargeNumber = (element) => element > 13;
 
 console.log(array1.findLastIndex(isLargeNumber));
 // expected output: 4
-
 ```
+
 23. `group()` groups the elements of an array based on the given function.
 
 <!-- code example of group -->
@@ -497,6 +506,7 @@ const groupped = array.groupBy(Math.floor);
 console.log(groupped);
 // expected output: Array [Array [6.1, 6.3], Array [4.2]]
 ```
+
 24. `groupToMap()` groups the elements of an array based on the given function and returns the objects in a Map.
 
 <!-- code example of groupToMap -->
@@ -519,10 +529,11 @@ console.log(groupped);
 Code example of reduceRight:
 
 ```javascript
-
-const array1 = [[0, 1], [2, 3], [4, 5]].reduceRight(
-      (accumulator, currentValue) => accumulator.concat(currentValue)
-    );
+const array1 = [
+  [0, 1],
+  [2, 3],
+  [4, 5],
+].reduceRight((accumulator, currentValue) => accumulator.concat(currentValue));
 
 console.log(array1);
 // expected output: Array [4, 5, 2, 3, 0, 1]
@@ -535,14 +546,14 @@ console.log(array1);
 Code example of Array.from:
 
 ```javascript
- function f() {
-      return Array.from(arguments);
-    }
+function f() {
+  return Array.from(arguments);
+}
 
 f(1, 2, 3);
 // [1, 2, 3]
 
-console.log(Array.from('foo'));
+console.log(Array.from("foo"));
 // expected output: Array ["f", "o", "o"]
 ```
 
@@ -556,10 +567,10 @@ Code example of Array.isArray:
 Array.isArray([1, 2, 3]);
 // true
 
-Array.isArray({foo: 123});
+Array.isArray({ foo: 123 });
 // false
 
-Array.isArray('foobar');
+Array.isArray("foobar");
 // false
 
 Array.isArray(undefined);

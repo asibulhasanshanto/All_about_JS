@@ -2,9 +2,7 @@
 
 This is a collection of resources to learn Javascript in depth. It is a work in progress and will be updated regularly. I'm following Jonas's Javascript course and will be adding resources as I go along.
 
-## Language Basics
-
-[Click here](./LanguageBasic/languageBasics.md) to view the language basics file.
+## [Language Basics](./LanguageBasic/languageBasics.md)
 
 In this section, I listed some topics which include:
 
@@ -12,9 +10,7 @@ In this section, I listed some topics which include:
 2. [Function declearation vs function expression](./LanguageBasic/languageBasics.md#function-declearation-vs-function-expression)
 3. [Arrays](./LanguageBasic/languageBasics.md#arrays)
 
-## How JS works behind the scenes
-
-[Click here](./HowJSWorks/howJSWorks.md) to view the how JS works file.
+## [How JS works behind the scenes](./HowJSWorks/howJSWorks.md)
 
 In this section, I listed some topics which include:
 
@@ -25,12 +21,8 @@ In this section, I listed some topics which include:
 5. [this keyword](./HowJSWorks/howJSWorks.md#this-keyword)
 6. [Primitive vs Reference Types](./HowJSWorks/howJSWorks.md#primitive-vs-reference-types)
 
-## Asynchronous Javascript
+## [Asynchronous Javascript](./AsynchronousJavascript/async.md)
 
-[Click here](./AsynchronousJavascript/async.md) to view the asynchronous JS file.
-
-## Data structures and Some Operators
-
-[Click here](./DataStructures/dataStructures.md) to view the data structures and some operators file.
+## [Data structures and Some Operators](./DataStructures/dataStructures.md)
 
 Topics include:
