@@ -35,6 +35,16 @@ This is a collection of resources to learn Javascript in depth. It is a work in 
 5. [Using async await pattern to write asynchronous code](./AsynchronousJavascript/async.md#using-async-await-pattern-to-write-asynchronous-code)
 6. [Runnung promises in parallel](./AsynchronousJavascript/async.md#runnung-promises-in-parallel)
 
-## [Data structures and Some Operators](./DataStructures/dataStructures.md)
+## [Es6, Data structures and Some Operators](./ES6/es6.md)
 
-Topics include:
+1. [Let,const VS var](./ES6/es6.md#letconst-vs-var)
+2. [Arrow Functions](./ES6/es6.md#arrow-functions)
+3. [Destructuring](./ES6/es6.md#destructuring)
+4. [The Spread Operator](./ES6/es6.md#the-spread-operator)
+5. [Rest Pattern and Parameters](./ES6/es6.md#rest-pattern-and-parameters)
+6. [Short Circuiting (&& and ||)](./ES6/es6.md#short-circuiting--and-)
+7. [The Nullish Coalescing Operator (??)](./ES6/es6.md#the-nullish-coalescing-operator-)
+8. [Logical assignment operators](./ES6/es6.md#logical-assignment-operators)
+9. [Maps](./ES6/es6.md#maps)
+10. [Iterators and generators](./ES6/es6.md#iterators-and-generators)
+11. [Sets](./ES6/es6.md#sets)
